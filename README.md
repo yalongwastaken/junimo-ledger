@@ -1,46 +1,49 @@
-# Heart Atlas
+# Junimo Ledger
 
-A Stardew Valley mod for completionists who want to know what's out there — without being told what it is.
+A Stardew Valley mod that keeps your farm's books: what you earned each day,
+season, and year, and where the money came from.
 
 > **Status: design stage.**
 
-## What It Does
+## The Design
 
-Stardew Valley has heart events with every NPC, but the game gives you no indication they exist until you accidentally trigger one. Heart Atlas fixes that by surfacing awareness of these events directly in the social tab — no spoilers, just the knowledge that something is waiting.
+Every night the game shows what you shipped and what it earned, then forgets it.
+The ledger keeps that history in-game:
 
-**Heart event notifications** — when you reach the heart threshold that unlocks an event with an NPC, a small notification lets you know an event is available. You know it's there. You don't know what it is.
+- **Day view:** every day's earnings this season, so the nightly summary never
+  disappears.
+- **Season and year views:** totals per season, per year, and lifetime, with a
+  chart of earnings across the season.
+- **Where the money comes from:** earnings by category (crops, animal products,
+  artisan goods, fish, forage, minerals) and the top earners.
 
-**Social tab indicators** — the existing social tab is extended to show the status of each NPC's heart events at a glance. Locked events show as "event at X hearts." Unlocked but unseen events show as "event available." Triggered events show as seen. No details. No spoilers.
+History starts the day the mod is installed; the game keeps no record of earlier
+days.
 
-## Why
+## Repository Structure
 
-Completionists want to know what exists, not be surprised by it. The frustration isn't the events themselves — it's finishing a playthrough and finding out you missed half of them because the game never told you they were there.
-
-Heart Atlas gives you the map. You still have to make the journey.
-
-## Tech
-
-Planned: SMAPI and Harmony for method patching. No custom assets or pixel art — all UI will use Stardew's native components.
-
-## Requirements
-
-- Stardew Valley 1.6+
-- SMAPI 4.0+
+```
+junimo-ledger/
+├── README.md
+└── LICENSE
+```
 
 ## Installation
 
-1. Install [SMAPI](https://smapi.io/)
-2. Download Heart Atlas and place it in your `Mods` folder
-3. Launch Stardew Valley through SMAPI
+### Requirements
 
-## Contributing
+- Stardew Valley 1.6
+- SMAPI 4.0 or later
 
-Open to suggestions and feedback on the design. This is a learning project, so once there's code, PRs with explanations are especially welcome.
-
-Planned work is tracked in [issues](https://github.com/yalongwastaken/heart-atlas/issues).
+Not installable yet: there is no code.
 
 ## Author
 
 **Anthony Yalong**
+
 - Email: yalong.anthony123@gmail.com
 - GitHub: [@yalongwastaken](https://github.com/yalongwastaken)
+
+## License
+
+MIT. See [LICENSE](LICENSE).
